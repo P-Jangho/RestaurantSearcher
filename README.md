@@ -68,4 +68,22 @@ Android
 ## 自己評価
 デザイン面や追加しなければならない機能面で、現在私が使っている配達アプリやグーグルマップアプリをある程度参照しながら作りました。 初めて作ってみた地図アプリなのでとても難しかったですが、この機会にたくさん勉強になりました。 コードを作成する上でもMVMパターンで書くために努力しましたが、きれいに整理されたようではないと思い、まだまだ勉強が必要だと思いました。 今後も必要な情報や追加すべき機能があれば、引き続き追加しながらより良いアプリを作るために積極的に取り組んでいきます。
 
-##アウトプット
+## アウトプット
+<div style="display: flex; justify-content: center;">
+  <div style="display: flex;">
+    <img width="200" alt="1" src="https://github.com/P-Jangho/RestaurantSearcher/assets/131533268/29d3a59e-b090-468e-981b-82ccd19c3a9e">
+    <img width="200" alt="2" src="https://github.com/P-Jangho/RestaurantSearcher/assets/131533268/1c47fd29-e2bc-4730-9353-c5b4d1fcf211">
+    <img width="200" alt="3" src="https://github.com/P-Jangho/RestaurantSearcher/assets/131533268/e6d6bf24-7476-4262-912c-a8350f38b796">
+    <img width="200" alt="4" src="https://github.com/P-Jangho/RestaurantSearcher/assets/131533268/b246106f-3bec-4f5b-938e-7b16d1be9047">
+  </div>
+  
+  <div style="display: flex;">
+    <img width="200" alt="5" src="https://github.com/P-Jangho/RestaurantSearcher/assets/131533268/9ac2e829-c8a6-4801-86a2-bdb52aa1ab31">
+    <img width="200" alt="6" src="https://github.com/P-Jangho/RestaurantSearcher/assets/131533268/3986c952-2104-4895-9a51-0f4e4197d644">
+    <img width="200" alt="7" src="https://github.com/P-Jangho/RestaurantSearcher/assets/131533268/cdce4e5b-0180-4a5a-9261-d4166ccbaf7f">
+    <img width="200" alt="8" src="https://github.com/P-Jangho/RestaurantSearcher/assets/131533268/8d44830c-57b6-4006-8856-76466bc3191a">
+</div>
+
+  <div style="display: flex;">
+    <img width="200" alt="9" src="https://github.com/P-Jangho/RestaurantSearcher/assets/131533268/519be3df-e843-41cb-ae55-86cb6f5437c7">
+  </div>
