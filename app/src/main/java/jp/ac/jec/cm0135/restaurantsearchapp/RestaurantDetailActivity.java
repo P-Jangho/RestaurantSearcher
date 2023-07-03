@@ -1,18 +1,22 @@
 package jp.ac.jec.cm0135.restaurantsearchapp;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.annotation.SuppressLint;
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 import com.bumptech.glide.Glide;
 
 public class RestaurantDetailActivity extends AppCompatActivity {
 
     ImageView imageView;
+    ImageButton call_button;
 
     @SuppressLint({"MissingInflatedId", "SetTextI18n"})
     @Override
@@ -26,6 +30,7 @@ public class RestaurantDetailActivity extends AppCompatActivity {
         TextView accessTextView = findViewById(R.id.access_textview);
         TextView openTextView = findViewById(R.id.open_textview);
         imageView = findViewById(R.id.imageView);
+        call_button = findViewById(R.id.call_button);
 
         Intent intent = getIntent();
         if (intent != null) {
@@ -46,5 +51,16 @@ public class RestaurantDetailActivity extends AppCompatActivity {
                         .into(imageView);
             }
         }
+
+        call_button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                String phoneNumber = "080-5187-9673"; // 전화를 걸고자 하는 전화번호를 입력하세요
+
+                Intent intent = new Intent(Intent.ACTION_DIAL);
+                intent.setData(Uri.parse("tel:" + phoneNumber));
+                startActivity(intent);
+            }
+        });
     }
 }

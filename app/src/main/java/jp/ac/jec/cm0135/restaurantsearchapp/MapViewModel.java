@@ -22,16 +22,6 @@ import okhttp3.Response;
 
 public class MapViewModel extends ViewModel {
 
-    MyObject myObject = new MyObject();
-
-    public MyObject getMyObject() {
-        return myObject;
-    }
-
-    public void setMyObject(MyObject myObject) {
-        this.myObject = myObject;
-    }
-
     public MutableLiveData<List<String>> getAddress() {
         return address;
     }

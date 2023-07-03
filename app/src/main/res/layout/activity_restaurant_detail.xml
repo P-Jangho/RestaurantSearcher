@@ -7,26 +7,48 @@
     android:padding="16dp"
     tools:context=".RestaurantDetailActivity">
 
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="150dp"
-        android:layout_height="150dp"
-        android:scaleType="centerCrop"
-        android:layout_gravity="center_horizontal"/>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:scaleType="centerCrop"
+            android:layout_gravity="center_horizontal"/>
+
+        <ImageButton
+            android:id="@+id/call_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/call"
+            android:background="@android:color/transparent"
+            android:layout_gravity="right"/>
+    </FrameLayout>
 
     <TextView
         android:id="@+id/name_textview"
+        android:fontFamily="@font/font"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="5dp"
+        android:layout_marginTop="20dp"
         android:textSize="25sp"
-        android:textStyle="bold" />
+        android:textStyle="bold"/>
 
     <TextView
         android:id="@+id/genre_textview"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textSize="18sp" />
+        android:textSize="18sp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/font1"
+        android:gravity="center"
+        android:background="@drawable/border"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"/>
 
     <TextView
         android:layout_width="match_parent"
@@ -34,14 +56,22 @@
         android:text="住所"
         android:textStyle="bold"
         android:textSize="20sp"
-        android:layout_marginTop="5dp"/>
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/font"/>
 
     <TextView
         android:id="@+id/address_textview"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
-        android:textSize="18sp" />
+        android:textSize="18sp"
+        android:fontFamily="@font/font1"
+        android:gravity="center"
+        android:background="@drawable/border"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"/>
 
     <TextView
         android:layout_width="match_parent"
@@ -49,14 +79,22 @@
         android:text="アクセス"
         android:textStyle="bold"
         android:textSize="20sp"
-        android:layout_marginTop="5dp"/>
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/font"/>
 
     <TextView
         android:id="@+id/access_textview"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
-        android:textSize="18sp" />
+        android:textSize="18sp"
+        android:fontFamily="@font/font1"
+        android:gravity="center"
+        android:background="@drawable/border"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"/>
 
     <TextView
         android:layout_width="match_parent"
@@ -64,13 +102,21 @@
         android:text="営業時間"
         android:textStyle="bold"
         android:textSize="20sp"
-        android:layout_marginTop="5dp"/>
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/font"/>
 
     <TextView
         android:id="@+id/open_textview"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
-        android:textSize="18sp" />
+        android:textSize="18sp"
+        android:fontFamily="@font/font1"
+        android:gravity="center"
+        android:background="@drawable/border"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"/>
 
 </LinearLayout>

@@ -7,18 +7,33 @@
     android:orientation="vertical"
     tools:context=".MainActivity">
 
-    <Button
-        android:id="@+id/btnMap"
+    <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:text="map"/>
+        android:src="@drawable/restaurant"/>
 
-    <Button
-        android:id="@+id/btnArea"
+    <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:text="Area"/>
+        android:orientation="horizontal"
+        android:layout_gravity="center">
 
+        <ImageButton
+            android:id="@+id/btnMap"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@android:color/transparent"
+            android:src="@drawable/map"
+            android:layout_marginRight="50dp"/>
+
+        <ImageButton
+            android:id="@+id/btnArea"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@android:color/transparent"
+            android:src="@drawable/area"
+            android:layout_marginLeft="50dp"/>
+    </LinearLayout>
 </LinearLayout>

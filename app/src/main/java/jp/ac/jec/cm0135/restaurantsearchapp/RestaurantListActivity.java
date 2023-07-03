@@ -6,8 +6,8 @@ import android.os.Bundle;
 import android.view.View;
 import android.view.inputmethod.InputMethodManager;
 import android.widget.AdapterView;
-import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageButton;
 import android.widget.ListView;
 import android.widget.ToggleButton;
 
@@ -39,7 +39,7 @@ public class RestaurantListActivity extends AppCompatActivity {
     private ArrayList<String> opneList;
     private ToggleButton toggleButton;
     private EditText search_edit_text_list;
-    private Button search_button_list;
+    private ImageButton search_button_list;
     private String apiUrl;
     private String edtStr = "";
 

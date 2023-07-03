@@ -9,8 +9,8 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.view.inputmethod.InputMethodManager;
-import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageButton;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -50,9 +50,9 @@ public class MapActivity extends AppCompatActivity implements OnMapReadyCallback
     private double latitude;
     private double longitude;
     private EditText searchEdit;
-    private Button searchBtn;
-    private Button btnUp;
-    private Button btnDown;
+    private ImageButton searchBtn;
+    private ImageButton btnUp;
+    private ImageButton btnDown;
     static String edtStr = "";
     String apiKey = "4d928fd8f36961a4";;
     String apiUrl;
@@ -90,7 +90,6 @@ public class MapActivity extends AppCompatActivity implements OnMapReadyCallback
 
 
         // 기본값으로 3 설정
-//        int defaultDistance = 3;
         String defaultDistanceText = String.format("Distance: %d m", getSearchRadiusValue(searchRadius));
         distanceTextView.setText(defaultDistanceText);
         btnUp.setOnClickListener(new View.OnClickListener() {
@@ -99,9 +98,11 @@ public class MapActivity extends AppCompatActivity implements OnMapReadyCallback
                 searchRadius += 1;
                 if(searchRadius == 5) {
                     btnUp.setEnabled(false);
+                    btnUp.setImageAlpha(128);
                 }
                 if(searchRadius == 2) {
                     btnDown.setEnabled(true);
+                    btnDown.setImageAlpha(255);
                 }
 
                 String defaultDistanceText = String.format("Distance: %d m", getSearchRadiusValue(searchRadius));
@@ -116,9 +117,11 @@ public class MapActivity extends AppCompatActivity implements OnMapReadyCallback
                 searchRadius -= 1;
                 if(searchRadius == 1) {
                     btnDown.setEnabled(false);
+                    btnDown.setImageAlpha(128);
                 }
                 if(searchRadius == 4){
                     btnUp.setEnabled(true);
+                    btnUp.setImageAlpha(255);
                 }
                 String defaultDistanceText = String.format("Distance: %d m", getSearchRadiusValue(searchRadius));
                 distanceTextView.setText(defaultDistanceText);

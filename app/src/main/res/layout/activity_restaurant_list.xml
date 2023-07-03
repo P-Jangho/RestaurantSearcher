@@ -9,34 +9,43 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
 
         <EditText
             android:id="@+id/search_edit_text_list"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="2"
-            android:hint="검색어를 입력하세요." />
+            android:hint="@string/edtHint"
+            android:layout_marginStart="5dp"/>
 
-        <Button
+        <ImageButton
             android:id="@+id/search_button_list"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="검색" />
-
+            android:src="@drawable/search"
+            android:background="@android:color/transparent"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"/>
     </LinearLayout>
 
     <ToggleButton
         android:id="@+id/toggleBtn"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:textOff="Off Stage"
-        android:textOn="On Stage"/>
+        android:textOff="カナ順に"
+        android:textOn="人気順に"
+        android:background="@drawable/border"
+        android:layout_marginRight="50dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="15dp"/>
 
     <ListView
         android:id="@+id/listView_A"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"/>
-
+        android:layout_height="match_parent"
+        android:divider="@drawable/guide"
+        android:layout_marginTop="15dp"/>
 </LinearLayout>
